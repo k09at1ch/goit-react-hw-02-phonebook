@@ -1,0 +1,14 @@
+.list{
+    display: flex;
+    flex-direction: column;
+}
+.listItem{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+.all{
+    padding:10px;
+    margin: 0;
+}

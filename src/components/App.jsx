@@ -1,16 +1,12 @@
-export const App = () => {
-  return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
-  );
-};
+import React from 'react';
+import { nanoid } from 'nanoid';
+import MyClassComponent from './class/Class';
+import style from './class/Class.module.css'
+const App = () => (
+  <div>
+    <h1 className={style.all}>Phonebook</h1>
+    <MyClassComponent />
+  </div>
+);
+
+export default App;
