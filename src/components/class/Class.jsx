@@ -16,7 +16,7 @@ class MyClassComponent extends React.Component {
   };
 
   handleAddContact = () => {
-    const { name, contacts, number } = this.state;
+    const { name, number } = this.state;
     if (name.trim() === '' || number.trim() === '') {
       return;
     }

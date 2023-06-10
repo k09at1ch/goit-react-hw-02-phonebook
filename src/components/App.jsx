@@ -1,5 +1,4 @@
 import React from 'react';
-import { nanoid } from 'nanoid';
 import MyClassComponent from './class/Class';
 import style from './class/Class.module.css'
 const App = () => (
