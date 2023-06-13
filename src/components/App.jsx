@@ -3,8 +3,6 @@ import style from './Class.module.css';
 import ContactForm from './contactForm/ContactForm';
 import ContactList from './contactList/ContactList';
 import Filter from './filter/Filter';
-import { nanoid } from 'nanoid'; 
-
 class App extends React.Component { 
   state = {
     contacts: [
