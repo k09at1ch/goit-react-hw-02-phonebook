@@ -1,21 +1,18 @@
 import React from 'react';
-class Filter extends React.Component {
-  handleSearchChange = event => {
-    this.props.onSearchChange(event.target.value);
+
+function Filter(props) {
+  const handleSearchChange = event => {
+    props.onSearchChange(event.target.value);
   };
 
-  render() {
-    const { searchTerm } = this.props;
-
-    return (
-      <input
-        type="text"
-        placeholder="Search"
-        value={searchTerm}
-        onChange={this.handleSearchChange}
-      />
-    );
-  }
+  return (
+    <input
+      type="text"
+      placeholder="Search"
+      value={props.searchTerm}
+      onChange={handleSearchChange}
+    />
+  );
 }
 
 export default Filter;

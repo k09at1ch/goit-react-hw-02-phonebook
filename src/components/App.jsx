@@ -17,7 +17,7 @@ class App extends React.Component {
 
   handleAddContact = newContact => {
     const { name } = newContact;
-    const isNameExists = this.state.contacts.some(
+    const isNameExists = this.state.contacts.find(
       contact => contact.name.toLowerCase() === name.toLowerCase()
     );
     if (isNameExists) {
