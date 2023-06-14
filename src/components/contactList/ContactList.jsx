@@ -1,6 +1,4 @@
 import React from 'react';
-import style from '../Class.module.css';
-
 function ContactList(props) {
   const handleDeleteContact = id => {
     props.onDeleteContact(id);
